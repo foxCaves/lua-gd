@@ -20,7 +20,7 @@ truecolor images) and so forth. It is particularly useful in Web applications.
     license = "MIT/X11",
     maintainer = "Alexandre Erwin Ittner"
 }
-hmhgbkghkgyh
+
 dependencies = {
     "lua >= 5.1"
 }

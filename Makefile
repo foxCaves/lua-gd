@@ -27,7 +27,7 @@
 
 # Lua-GD version. This one must be set.
 VERSION=2.0.33r3
-
+				ss
 
 # ---------------------------------------------------------------------------
 # Automatic configuration using pkgconfig. These lines should work on most
