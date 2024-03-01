@@ -37,7 +37,7 @@ OUTFILE=gd.so
 
 GDFEATURES=-DGD_XPM -DGD_JPEG -DGD_FONTCONFIG -DGD_FREETYPE -DGD_PNG -DGD_GIF
 LFLAGS=$(LLFLAGS) -shared -lgd
-CFLAGS=$(LCFLAGS) -I$(LUA_INCDIR)
+CFLAGS=$(LCFLAGS) -I$(LUA_INCDIR) -DVERSION=\"$(VERSION)\"
 
 
 # ---------------------------------------------------------------------------
