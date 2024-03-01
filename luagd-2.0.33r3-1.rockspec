@@ -36,7 +36,6 @@ build = {
          LFLAGS="$(LIBFLAG)",
          LUA_LIBDIR="$(LUA_LIBDIR)",
          LUA_INCDIR="$(LUA_INCDIR)",
-         LUA="$(LUA)",
       },
       install_variables = {
          INSTALL_PATH="$(LIBDIR)",

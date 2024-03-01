@@ -27,7 +27,12 @@
 
 # Lua-GD version. This one must be set.
 VERSION=2.0.33r3
-				ss
+
+CFLGAS=""
+LFLAGS=""
+LUA_LIBDIR=""
+LUA_INCDIR=""
+INSTALL_PATH=""
 
 # ---------------------------------------------------------------------------
 # Automatic configuration using pkgconfig. These lines should work on most
