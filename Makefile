@@ -28,30 +28,16 @@
 # Lua-GD version. This one must be set.
 VERSION=2.0.33r3
 
-# Command used to run Lua code
-LUABIN=lua5.1
-
-# Optimization for the brave of heart ;)
-OMITFP=-fomit-frame-pointer
-
 
 # ---------------------------------------------------------------------------
 # Automatic configuration using pkgconfig. These lines should work on most
 # Linux/Unix systems. If your system does not have these programs you must
 # comment out these lines and uncomment and change the next ones.
 
-# Name of .pc file. "lua5.1" on Debian/Ubuntu
-LUAPKG=lua5.1
 OUTFILE=gd.so
 
-CFLAGS=-O3 -Wall -fPIC $(OMITFP)
-CFLAGS+=`pkg-config $(LUAPKG) --cflags`
-CFLAGS+=-DVERSION=\"$(VERSION)\"
-
 GDFEATURES=-DGD_XPM -DGD_JPEG -DGD_FONTCONFIG -DGD_FREETYPE -DGD_PNG -DGD_GIF
-LFLAGS=-shared `pkg-config $(LUAPKG) --libs` -lgd
-
-INSTALL_PATH := `pkg-config $(LUAPKG) --variable=INSTALL_CMOD`
+LFLAGS+=-shared -lgd
 
 
 # ---------------------------------------------------------------------------
