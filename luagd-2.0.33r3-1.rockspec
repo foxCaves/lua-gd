@@ -34,17 +34,10 @@ build = {
       build_variables = {
          CFLAGS="$(CFLAGS)",
          LFLAGS="$(LIBFLAG)",
-         LUA_LIBDIR="$(LUA_LIBDIR)",
-         LUA_BINDIR="$(LUA_BINDIR)",
          LUA_INCDIR="$(LUA_INCDIR)",
-         LUA="$(LUA)",
       },
       install_variables = {
-         INST_PREFIX="$(PREFIX)",
-         INST_BINDIR="$(BINDIR)",
          INSTALL_PATH="$(LIBDIR)",
-         INST_LUADIR="$(LUADIR)",
-         INST_CONFDIR="$(CONFDIR)",
       },
     platforms = {
         unix = {
