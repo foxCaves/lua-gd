@@ -38,6 +38,7 @@ OUTFILE=gd.so
 
 GDFEATURES=-DGD_XPM -DGD_JPEG -DGD_FONTCONFIG -DGD_FREETYPE -DGD_PNG -DGD_GIF
 LFLAGS+=-shared -lgd
+CFLGAS+=-I$(LUA_INCDIR)
 
 
 # ---------------------------------------------------------------------------
