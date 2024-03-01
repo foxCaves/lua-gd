@@ -28,12 +28,6 @@
 # Lua-GD version. This one must be set.
 VERSION=2.0.33r3
 
-CFLGAS=""
-LFLAGS=""
-LUA_LIBDIR=""
-LUA_INCDIR=""
-INSTALL_PATH=""
-
 # ---------------------------------------------------------------------------
 # Automatic configuration using pkgconfig. These lines should work on most
 # Linux/Unix systems. If your system does not have these programs you must
@@ -42,8 +36,8 @@ INSTALL_PATH=""
 OUTFILE=gd.so
 
 GDFEATURES=-DGD_XPM -DGD_JPEG -DGD_FONTCONFIG -DGD_FREETYPE -DGD_PNG -DGD_GIF
-LFLAGS+=-shared -lgd -L$(LUA_LIBDIR)
-CFLGAS+=-I$(LUA_INCDIR)
+LFLAGS=$(LLFLAGS) -shared -lgd -L$(LUA_LIBDIR)
+CFLGAS=$(LCFLAGS) -I$(LUA_INCDIR)
 
 
 # ---------------------------------------------------------------------------

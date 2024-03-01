@@ -32,8 +32,8 @@ external_dependencies = {
 build = {
     type = "make",
       build_variables = {
-         CFLAGS="$(CFLAGS)",
-         LFLAGS="$(LIBFLAG)",
+         LCFLAGS="$(CFLAGS)",
+         LLFLAGS="$(LIBFLAG)",
          LUA_LIBDIR="$(LUA_LIBDIR)",
          LUA_INCDIR="$(LUA_INCDIR)",
       },
